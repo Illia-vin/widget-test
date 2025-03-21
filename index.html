@@ -4,9 +4,7 @@
 
 <head>
  <style>
-        body {
-            background-color: #F5F7FA;
-        }
+        body {background-color: #F5F7FA;}
  </style>
  </head>
 
@@ -14,6 +12,9 @@
 <body>
  <div id="kwizbot_widget"></div>
  <script defer>
+
+ document.cookie.split(";").forEach(function(c) {document.cookie = c.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date(0).toUTCString() + ";path=/"); });
+  
  localStorage.clear();
  sessionStorage.clear();
  
